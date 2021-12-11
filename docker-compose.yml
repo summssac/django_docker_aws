@@ -2,7 +2,7 @@ version: "3.8"
 services:
   web:
     build: ./app
-    image: 662249699413.dkr.ecr.us-east-2.amazonaws.com/django_docker_aws:django_docker_aws_web
+    image: 662249699413.dkr.ecr.us-east-2.amazonaws.com/django_docker_aws
     command: gunicorn hello_django.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - ./app/:/usr/src/app/
